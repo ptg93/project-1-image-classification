@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iron Hack - Bootcamp AI - Project 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Animal Seer</h1>
+	<h2>Upload one or more images of animals for prediction</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="files[]" multiple>
+        <input type="submit" value="Upload">
+    </form>
+    <footer>
+        <p>Hi! Hmmm... I don't know what you were expecting here so... Hi!... Why are you still reading? Leave me alone!</p>
+    </footer>
+</body>
+</html>

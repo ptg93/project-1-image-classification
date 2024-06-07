@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iron Hack - Bootcamp AI - Project 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Animal Seer</h1>
+    <h2>Prediction Results</h2>
+    {% for filename, predictions in results %}
+    <div class="image-result">
+        <h3>Uploaded Image: {{ filename }}</h3>
+        <img src="{{ url_for('send_file', filename=filename) }}" alt="Uploaded Image" style="width:300px;">
+        
+        <h3>Predictions:</h3>
+        <table>
+            <tr>
+                <th>Class id</th>
+                <th>Animal</th>
+                <th>Probability</th>
+            </tr>
+            {% for i in range(10) %}
+            <tr>
+                <td>{{ i }}</td>
+                <td>{{ class_names[i] }}</td>
+                <td>{{ "%.2f" | format(predictions[0][i] * 100) }}%</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% endfor %}
+    
+    <a href="/">Upload more images</a>
+
+    <footer>
+        <p>I'm a footer, I totally support you :D</p>
+    </footer>
+</body>
+</html>

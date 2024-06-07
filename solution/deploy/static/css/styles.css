@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F4E1;
+    color: #543310;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #AF8F6F;
+    color: #543310;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    color: #543310;
+	text-align: center;
+
+}
+
+h3 {
+    color: #543310;
+    margin-top: 20px;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #AF8F6F;
+    color: #F8F4E1;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #74512D;
+}
+
+footer {
+    background-color: #543310;
+    color: #F8F4E1;
+    text-align: center;
+	position:fixed;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+	border-radius: 8px;
+}
+
+table, th, td {
+    border: 1px solid #AF8F6F;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #74512D;
+    color: #F8F4E1;
+}
+
+tr:nth-child(even) {
+    background-color: #AF8F6F;
+	color: #F8F4E1
+}
+
+.image-result {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.image-result img {
+    border: 2px solid #AF8F6F;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #F8F4E1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
